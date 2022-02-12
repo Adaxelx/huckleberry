@@ -1,6 +1,17 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+  --color-darkest-gray: hsl(0deg, 0%, 10%);
+  --color-dark-gray: hsl(0deg, 0%, 30%);
+  --color-medium-gray: hsl(0deg, 0%, 40%);
+  --color-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
 }
 
 html,
@@ -10,3 +21,50 @@ body {
 }
 
 /* Add styles here! */
+
+p {
+  text-align: justify;
+}
+
+header {
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+
+.intro-chunk {
+  max-width: 364px;
+}
+
+header,
+.card {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+strong {
+  color: var(--color-primary);
+}
+
+main {
+  border-top: 8px solid var(--color-medium-gray);
+  background-color: var(--color-light);
+  width: 100%;
+  padding: 64px 0;
+}
+
+.card {
+  padding-top: 8px;
+  background: var(--color-white);
+  border-bottom: 8px solid var(--color-medium-gray);
+}
+
+.indented-heading {
+  margin: 0;
+  background-color: var(--color-secondary-light);
+  padding: 16px 24px;
+  width: fit-content;
+  margin-left: -24px;
+  border-bottom: 8px solid var(--color-secondary-dark);
+}
